@@ -12,5 +12,5 @@ function foo6(num1: any, num2: any): any {
 
 // 在函数的重载中，实现函数是不能直接被调用的，要匹配到
 console.log(foo6(1, 2));
-console.log(foo6('dengwj', 'zww'));
+console.log(foo6('dengwj', 'zww')); 
 // console.log(foo6({ name: 'gg' }, 11)); 报错
