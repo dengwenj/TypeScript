@@ -5,3 +5,7 @@ function foo(message) {
 }
 // foo(1111)
 foo('dengwenjie');
+
+function foo(params) {
+    
+}
