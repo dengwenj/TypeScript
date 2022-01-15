@@ -36,11 +36,15 @@ const info = {
 
 export {};
 
-
+// 'this' 隐含类型为 'any'，因为它没有类型注释。 报错的意思
 type ThisType1 = { name: string, saying: () => void }
 function foo3(this: ThisType1, message: string) {
   console.log(this) // { name: 'zww', saying: [Function: saying], sex: '女' }
   this.saying()
-  console.log(this.name)
+  // console.log(this.name)
+  const a = () => {
+    console.log(this.name);
+  }
+  a()
 }
 foo3.call({ name: 'zww', saying() {console.log('dwj')}, sex: '女' }, 'dd')
