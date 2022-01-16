@@ -22,3 +22,4 @@ const info = {
 
 const p: IObj = info // 这样就不会报错，这样会做一个擦除操作，会把多的擦除掉
 console.log(p) // { name: 'dengwenj', age: 21, sex: '男', address: '上海市' }
+// console.log(p.address); // 这样也不行，不能取到
