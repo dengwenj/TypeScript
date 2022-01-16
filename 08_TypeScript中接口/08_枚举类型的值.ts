@@ -19,7 +19,7 @@ function type(d: Direction) {
   }
 }
 
-type(Direction.LEFT)
-type(Direction.RIGHT)
-type(Direction.TOP)
-type(Direction.BUTTOM)
+type(Direction.LEFT) // 0  默认
+type(Direction.RIGHT) // 1
+type(Direction.TOP) // 2
+type(Direction.BUTTOM) // 4
