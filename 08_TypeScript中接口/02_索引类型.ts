@@ -11,12 +11,14 @@ const fe: IIndex = {
 console.log(fe)
 
 interface IStr {
-  [name: string]: number
+  [name: string]: number,
+  react: number
 }
 
 const s: IStr = {
   java: 1995,
   js: 1996,
-  c: 1972
+  c: 1972,
+  react: 11111
 }
 console.log(s);
