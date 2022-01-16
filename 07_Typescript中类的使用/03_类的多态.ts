@@ -1,5 +1,5 @@
 class Animal {
-  action() {
+  action() { // 这里必须要写
     console.log('action1')
   }
 }
