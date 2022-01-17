@@ -12,3 +12,14 @@ export namespace zww {
 console.log(dwj.person);
 
 console.log(zww.person);
+
+
+console.log(name);
+console.log(age);
+
+foo()
+
+const p = new Person('dengwj', 21)
+console.log(p);
+
+
