@@ -15,3 +15,10 @@ declare class Person {
 
   constructor(name: string, age: number)
 }
+
+// 声明文件
+declare module '*.jpg'
+
+declare namespace d {
+  export function f(): void  
+}
