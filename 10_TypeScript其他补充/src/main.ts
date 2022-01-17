@@ -1,5 +1,3 @@
-import { sum } from "./math";
+import { dwj, zww } from "./utils/math";
 
-const message: string = "Hello TypeScript";
-console.log(sum(20, 30));
-console.log(message);
+console.log(dwj, zww); // {person: 'dengwj'} {person: 'zww'}
