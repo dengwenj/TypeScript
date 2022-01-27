@@ -6,6 +6,7 @@ interface ILength {
 function foo<T extends ILength>(arg: T) {
   return arg.length
 }
+// 我们需要传入符合约束类型的值，必须包含必须的属性
 
 // console.log(foo(123)) 不能传 数字没有 length 属性
 console.log(foo('dwj'));
