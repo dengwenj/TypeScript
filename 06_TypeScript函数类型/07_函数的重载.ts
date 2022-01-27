@@ -1,10 +1,12 @@
 // 函数的重载: 函数名相同，参数不同（类型不同或个数不同），就是函数的重载
 function foo6(num1: string, num2: string): string; // 不写函数体
 function foo6(num1: number, num2: number): number;
+function foo6(num1: string, num2: number): string;
+function foo6(num1: number, num2: string): string
 
 // 实现函数
 function foo6(num1: any, num2: any): any {
-  if (typeof num1 === 'string' && typeof num2 === 'string') {
+  if (typeof num1 === 'string' || typeof num2 === 'string') {
     return `${num1} and ${num2}`
   }
   return num1 + num2
