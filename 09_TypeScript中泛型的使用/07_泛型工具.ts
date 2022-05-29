@@ -2,7 +2,7 @@
 
 // Partial<T> 此工具的作用就是将泛型中全部属性变为可选的。
 type Partial<T> = {
-	[P in keyof T]?: T[P]
+  [P in keyof T]?: T[P]
 }
 
 // Record<K, T> 此工具的作用是将 K 中所有属性值转化为 T 类型，我们常用它来申明一个普通 object 对象。
@@ -10,7 +10,7 @@ type Record<K extends keyof any, T> = { // keyof any对应的类型为number | s
   [key in K]: T
 }
 type Lh = 'age' | 'sex'
-type HH = Record<Lh, number> 
+type HH = Record<Lh, number>
 type HHH = Record<string, number>
 const n: HH = {
   age: 22,
@@ -61,5 +61,4 @@ type Required<T> = {
 
 // 语法-?，可以理解为就是 TS 中把?可选属性减去的意思
 
-export {}
-
+export { }
