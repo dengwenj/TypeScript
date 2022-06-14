@@ -29,7 +29,10 @@ const h: H = {
 
 interface A {
   (): void
+  hh1?: string
 }
-
 const a: A = () => {}
+a.hh1 = 'str'
+console.log(a.hh1)
+
  
