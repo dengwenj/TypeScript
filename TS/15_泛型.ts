@@ -54,6 +54,6 @@ interface User15 {
   sex: string
 }
 
-type U15 = {
-  readonly [key in keyof User15]?: User15[key]
+type U15<T extends object> = {
+  readonly [key in keyof T]?: T[key]
 }
