@@ -17,6 +17,9 @@ for (const key of map21.keys()) {
   // console.log(key);
 }
 
+/**
+ * weakmap 和 map 的区别 weakmap 的 key 只能是引用类型！！！！！！
+ */
 // WeakMap 不能取到键名和遍历 弱引用
 const weakMap21 = new WeakMap()
 
