@@ -57,3 +57,23 @@ interface User15 {
 type U15<T extends object> = {
   readonly [key in keyof T]?: T[key]
 }
+
+// Record 约束对象的 key 和 value，接受两个泛型
+// ReturnType 获取函数类型的返回值
+type Obj25Key = 'name' | 'age' | 'sex'
+const object25: Record<Obj25Key, string | number> = {
+  name: '朴睦',
+  age: 24,
+  sex: '男'
+}
+// 手写 Record
+type KeyofAny = keyof any
+type SRecord<T extends KeyofAny, K> = {
+  [key in T]: K
+} 
+
+// ReturnType 获取函数类型的返回值
+const foo25 = () => [1, 2, 3]
+type FooReturnType = SReturnType<typeof foo25>
+// 手写 ReturnType
+type SReturnType<T extends Function> = T extends (...args: any[]) => infer R ? R : never

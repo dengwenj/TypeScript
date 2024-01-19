@@ -47,3 +47,6 @@ const obj25: SOmit<User25, 'age'> = {
   sex: '',
   name: ''
 }
+
+// Record
+// ReturnType
