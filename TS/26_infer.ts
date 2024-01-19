@@ -29,3 +29,13 @@ type Foo26 = F26<{
   a: (a: string) => void
   b: (a: number) => void
 }>
+
+type Arr26 = ['a', 'b', 'c']
+type F126<T extends any[]> = T extends [infer F, ...any[]] ? F : T 
+type F1126<T extends any[]> = T extends [infer F, ...infer P] ? P : T 
+type One26 = F126<Arr26>
+type One261 = F1126<Arr26>
+ 
+type Array26 = [1, 2, 3, 4]
+type R26<T extends any[]> = T extends [infer O, ...infer L] ? [...R26<L>, O] : T
+type RR26 = R26<Array26> 
